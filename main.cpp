@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include "X85.hpp"
+#include "Debugger.hpp"
 
 int main(int argc, char* argv[]) {
   X85 microProcessor;
@@ -77,7 +78,7 @@ int main(int argc, char* argv[]) {
               }
             } break;
             case 'q': return 0;
-            case 'h': break;
+            case 'h': debuggerHelp(); break;
             case 'k': flag = false; break;
           }
         }
